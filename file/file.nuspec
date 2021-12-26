@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>file</id>
+    <version>5.41</version>
+    <packageSourceUrl>https://github.com/rkitover/chocolatey-packages/tree/master/file</packageSourceUrl>
+    <owners>Rafael Kitover</owners>
+    <title>file</title>
+    <authors>Ian F. Darwin and others</authors>
+    <projectUrl>http://www.darwinsys.com/file/</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/rkitover/file-windows/89e4b76cc0beb2fe7db0911974b1b632f035ddbf/data/filelogo.jpg</iconUrl>
+    <copyright>1986-1999 Ian F. Darwin</copyright>
+    <licenseUrl>https://raw.githubusercontent.com/file/file/FILE5_41/COPYING</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/file/file</projectSourceUrl>
+    <docsUrl>https://man7.org/linux/man-pages/man1/file.1.html</docsUrl>
+    <mailingListUrl>https://mailman.astron.com/mailman/listinfo/file</mailingListUrl>
+    <bugTrackerUrl>https://bugs.astron.com/my_view_page.php</bugTrackerUrl>
+    <tags>file magic libmagic type filetype guesser</tags>
+    <summary>A command-line tool for guessing the types of files.</summary>
+    <description>Port of the Linux file utility for guessing file types.</description>
+    <releaseNotes>
+https://github.com/rkitover/file-windows.git
+
+* e549fe7 - Use the right version magic.mgc for 5.41 resource. [rkitover]
+* 84d9422 - Point file submodule to 5.41 branch of fork. [rkitover]
+* 89e4b76 - Add original filelogo.jpg to data/. [rkitover]
+* 87c1bf3 - Update file submodule to latest. [rkitover]
+* 2a94d7f - Builtin compressed file support. [rkitover]
+* 9a1c046 - Embed magic.mgc in file.exe as fallback. [rkitover]
+* 5a52537 - Cleanup changes to submodules post-build. [rkitover]
+* 58a3e1f - Gen libmagic.lib and make file.exe static linked. [rkitover]
+* 6ad5969 - Update file to 5.41 + minor improvements. [rkitover]
+* 6623da0 - Update pcre2 to 10.39, convert to submodule. [rkitover]
+* c10e2cc - Merge pull request #11 from jmoraleda/FILE_5_39 [julian.rath]
+* 5ec3820 - Upgrade file to v5.39 [jorge.moraleda]
+
+https://github.com/rkitover/file.git
+
+* 0d1faa13 - Use MAP_TYPE_USER for Win32 resources. [rkitover]
+* 01ee74b2 - Don't copy buffer from LockResource(). [rkitover]
+* 85b27b90 - Windows builtin decompression prototype. [rkitover]
+* 86776f7d - Fallback to magic.mgc from Win32 resource. [rkitover]
+* 504206e5 - visibility.m4 moved [christos]
+* bb8a9a41 - welcome to 5.41 [christos]
+* 92371286 - refer to README.md [christos]
+* 1bd2ce71 - Improvements for Sony PlayStation bitmap images with file name extension TIM from Joerg Jenderek [christos]
+* 488f81a4 - Revert PR/186: Breaks DOS COM example [christos]
+* fd2bb71b - Add strength back to netpbm [christos]
+* 885c380a - new puzzle file [christos]
+* 1f13144d - Add empty line [christos]
+* ffd092b0 - From Alan De Smet: Add PUZ puzzles [christos]
+* afb5a662 - Patches to improve detection of Xbase database DBF files, CDX and IDX (index files) and PRF dBase Printer forms. From Joerg Jenderek [christos]
+* ac3fb1f5 - fix clang warnings (Avinash Sonawane) [christos]
+* 50982b81 - Reorder members to avoid padding (Avinash Sonawane) [christos]
+* db208438 - remove unused variable (Avinash Sonawane) [christos]
+* 2cbbf068 - Fix memory leak (Avinash Sonawane) [christos]
+* a80db6e1 - deal with malloc(0) cases (Avinash Sonawane) [christos]
+* d9686022 - move visibility.m4 to m4 (Avinash Sonawane) [christos]
+* bf9c2f09 - Add missing entries to ChangeLog [christos]
+* 93f79b0a - Avinash Sonawane: Fix tzname detection [christos]
+* 7c2e6249 - remove debugging code [christos]
+* 1046e6fd - remove whitespace [christos]
+* 9ff34288 - Add CDF magic from Michael Liu [christos]
+* 9c1a796c - PR/289: jc: Limit msdos com magic to not preceeded by printable chars. [christos]
+* a24d50ae - PR/288: Cirn09: Provide a way to not define DllMain if we are building a windows static library. [christos]
+* 53ec00b1 - PR/290: ChaoticRoman: Mention that distclean can fail. [christos]
+* 7b83135a - More details for bitmap fonts from Joerg Jenderek [christos]
+* bc3f1aa1 - remove debugging [christos]
+* 46df39b6 - Limit range of string printed (clusterfuzz) [christos]
+* a9c8d2a9 - Unfortunately gcc pointer overflow -> undefined behavior got rid of our checks, so be explicit when adding offsets (found by clusterfuzz) [christos]
+* 1ee3a7f9 - From Nathan Scott: - support for the version 3 PCP archive format - support for pmlogconf and pmlogger config file detection - tweaked output for #kmchart configs to reflect the tool that reads   them (the kmchart tool was renamed to pmchart ~15 years ago) - removal of some commented-out little endian lines (except in very   early development of the Linux port ~20 years ago, PCP archives have   always been big endian and we don't expect that to ever change now) [christos]
+* 360436c8 - More info for Fujifilm from David Dyer-Bennet [christos]
+* a168aa73 - PR/287: alealbonico: More rfc822 magic [christos]
+* 48e53e1c - Add threads test from PR/285 [christos]
+* c8deb32e - PR/285: Benjamin: python detect functions don't work in a multi-threaded context. [christos]
+* 0e6b4a09 - Add HAMMER2 support from Sascha Wildner [christos]
+* 6bc70726 - Fix typos (Nicolas Martinelli) [christos]
+* 3c000b11 - Add Microsoft Works and WordPerfect entries (Joerg Jenderek) [christos]
+* bf877852 - Don't short-circuit the results of the search; set v so that we can do relationship matching properly. [christos]
+* 2e48f028 - Maple DB improvements (Joerg Jenderek) [christos]
+* 19d5ac6c - restore jpeg strength to beat msdos boot sector [christos]
+* d03ca764 - restore trailing white-space instead of \040 in descriptions [christos]
+* 6f92acf7 - Add missing tests [christos]
+* 3c972cf8 - Ignore generated file [christos]
+* 3ffd5b6f - Add more files to the tar distribution (Christoph Biedl) [christos]
+* 7f3e1d16 - Add missing ext4 results file [christos]
+* 43884d3b - Sync with CVS: - remove files from git that have been removed in CVS - sync CVSID's [christos]
+* 7449263e - PR/284: ntavares: SER video format [christos]
+* 0641620d - PR/283: polluks: Add x-bitmap magic [christos]
+* 71c1f54b - disambiguate DBASE IV PRN files and StarOffice Gallery themes (Joerg Jenderek) [christos]
+* 093a216e - PR/281: pwinckles: Comment out dup EPUB magic [christos]
+* 8d39c092 - Add an x to default [christos]
+* f2855dc6 - PR/279: Jayc3Ca0: Look for String after main to disambiguate java [christos]
+* 7ea30908 - PR/280: rouca: Recognize Miscrosoft Silverlight applications [christos]
+* d87574ba - maple improvements from Joerg Jenderek [christos]
+* 627448f6 - algol68 improvements from Joerg Jenderek [christos]
+* 9b2538dc - Maple details from Joerg Jenderek [christos]
+* d02fd9ce - PR/277: polluks: more plan9 magic [christos]
+* 23985207 - PR/275:	pwinckles: FlateDecode does not mean password protected [christos]
+* 27252005 - Recognize slim files [christos]
+* 6a0e2522 - fix spelling mistake (github pulls/111 fxlb) [christos]
+* 5e59d8fd - Add extensions/mime for hdf (Joerg Jenderek) [christos]
+* 8436304b - Improve matlab detection (Joerg Jenderek) [christos]
+* 55acd550 - Fix memory leak in compile mode (where p == NULL) [christos]
+* 7fe4fe91 - remove dup extension [christos]
+* 6edba615 - move extension under description [christos]
+* 34948868 - centralize all link references [christos]
+* 06033125 - more markup [christos]
+* c28ae34d - rename README -> README.md and add markup (tanujdhiman @ github) [christos]
+* f15113a8 - Add nim [christos]
+* 9389daad - PR/273: timothee: Add magic for nim [christos]
+* f6a989d9 - mention conflicts with ttcomp archives (Joerg Jenderek) [christos]
+* cc3c8166 - Add ttcomp archive handling (Joerg Jenderek) [christos]
+* f20aaa36 - update reference URL, add commented out mime/ext (Joerg Jenderek) [christos]
+* d7045511 - add one more type (fxlb) [christos]
+* 0b5e7403 - add execline [christos]
+* ac7cdbd1 - PR/272: kiefermat: Only set returnval = 1 when we printed something (in all cases print or !print). This simplifies the logic and fixes the issue in the PR with -k and --mime-type there was no continuation printed before the default case. [christos]
+* 8bfbda61 - adjust for newer autoconf [christos]
+* 04e2d4a3 - Improve on resilient logic [christos]
+* ac8578e8 - PR/267: xexaxo: more cpio mime [christos]
+* b0bf7f73 - centralize bytecode: add resilient logic [christos]
+* 9f4334e2 - PR/269: roneyth: Avoid undefined behavior with clang (adding offset to NULL) [christos]
+* d484974a - PR/270: Don't translate unprintable characters in %s magic formats when -r [christos]
+* 2f183536 - Add compression for lrz, from Ville Skytta [christos]
+* 0d47491f - Use LoongArch as it is the official name (yetist) [christos]
+* af6d4a25 - Improve Adobe Photoshop Image *.psd *.pbd *.pdd detection (Joerg Jenderek) [christos]
+* 84e9ee09 - Better vCard detection (Joerg Jenderek) [christos]
+* 7d9b0f0d - Python bytecode files are not text (Steve Grubb) [christos]
+* 03b6dcb4 - BMP detection improvements and refactoring from Joerg Jenderek [christos]
+* c07b2a18 - PR/263: peoro: Require that we have full word matches for interpreters. Add a wild-card match for interpreters. [christos]
+* b1e3bf5e - Add a new flag that requires that the match is a full word, not a partial word match. [christos]
+* a2221010 - Document the f string flag [christos]
+* b2e55e98 - Add fstatat (Mike Gilbert) This is needed for the libsandbox LD_PRELOAD wrapper on Gentoo Linux. Bug: https://bugs.gentoo.org/784857 [christos]
+* 818e9b17 - Add commands to auto-update the list of family id magic (Blake Ramsdell) [christos]
+* d6d1d6b3a - Add &amp; to the list of extension characters allowed for 'b&amp;w' (Joerg Jengerek) [christos]
+* 96c287fa - Add magic for ImageLab bitmaps from Joerg Jenderek [christos]
+* dd988cd3 - More magic from polluks [christos]
+* c07e242e - Revert the fix for PR/180. It lead to PR/261. Using character count heuristics ends up with confusing behavior, the following should not be producing different results:     echo -n xx | ./file -     echo -n xy | ./file - [christos]
+* 905ca555 - Use %#x instead of 0x%x. [christos]
+* b92d97ca - Don't depend on the order of the printf modifiers. [christos]
+* ed37d2e4 - new DCX image magic from Joerg Jenderek [christos]
+* 480a3425 - Add as a comment how to convert the json list of family ids to magic [christos]
+* f0278873 - new uf2 magic from Blake Ramsdell [christos]
+* fa93fb9f - new fixes [christos]
+* aba3766e - fix tests [christos]
+* 2b1a9045 - fix uuid printing and add device printing [christos]
+* 750e69ca - Regognize jpeg-ls and make the magic for jpeg stronger so that it does not need extra strength boost [christos]
+* 749e1ecf - PR/256: mutableVoid: If the file is less than 3 bytes, use the file length to determine type [christos]
+* 9b0459af - PR/257: cuihao: put attributes inside the xz magic. [christos]
+* 07595622 - PR/259: aleksandr.v.novichkov: mime printing through indirect magic is not taken into account, use match directly so that it does. [christos]
+* 9651e81f - Document github links. [christos]
+* b56b58d4 - New bcachefs magic from Thomas Wei├ƒschuh [christos]
+* 71354be6 - Move and add some cad formats (Oliver Galvin) [christos]
+* 5ca644c2 - Add WarpIN installer magic (Joerg Jenderek) [christos]
+* 4c5fe1ad - Add missing parens, use reinterpret-casr [christos]
+* f7705dca - fix previous (cast >>) [christos]
+* 3096f87f - No point returning 0 twice, also don't return -1 as an error where 0 is expected. [christos]
+* 443ce47e - remove extra breaks [christos]
+* dcb90d47 - Add FTCOMP archives (Joerg Jenderek) [christos]
+* ea5d16ed - Add glTF (Martin Reboredo) [christos]
+* 9f7f0c03 - remove extra chars [christos]
+* abcd5831 - On ARM64 Linux access() syscall is no longer a real syscall to the kernel. Instead it's emulated by glibc with a new faccessat() syscall. (Icenowy Zheng) [christos]
+* 7cc6f66b - Add OS/2 LX Library and device driver (no DOS stub) (Joerg Jenderek) [christos]
+* 04d5ebc7 - Add GTA info (Oliver Galvin) [christos]
+* 576d713e - Add more ash paths from Cormac Stephenson [christos]
+* 6b34436a - remove "u" from the pattern (Joerg Jenderek) [christos]
+* 9e2becec - Encoding bug fix. [christos]
+* 1c677c04 - Don't count each byte encounter as 1, count the total number of bytes found (Anatol Belski). This makes it behave like 5.39. [christos]
+* 64dcffa7 - Add arm-coff (Mark Harmstone) [christos]
+* f0601504 - Fix regression after unsigned/signed printing changes by making types unsigned (Richard W.M. Jones) [christos]
+* 2f62d554 - Improve 8086 relocatable detection (Joerg Jenderek) [christos]
+    </releaseNotes>
+    <dependencies>
+      <dependency id="vcredist140" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
